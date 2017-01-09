@@ -1,0 +1,19 @@
+{
+  "about" : {
+    "title" : "About",
+    "items" : {
+      "philosophy" : {
+        "title" : "Our Philosophy",
+        "link" : "/philosophy.htm"
+      },
+      "history" : {
+        "title" : "History of CCNS",
+        "link" : "/history.htm"
+      },
+      "testimonials" : {
+        "title" :"Testimonials",
+        "link" : "/testimonials.htm"
+      }
+    }
+  }
+}

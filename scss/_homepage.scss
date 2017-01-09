@@ -1,0 +1,170 @@
+.page-hero {
+  @extend .full-bleed;
+
+  .hero-image {
+    display: block;
+    width: 100%;
+  }
+}
+
+.promo-banner {
+  @extend .full-bleed;
+  align-items: center;
+  background: $light-blue;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  padding: 9px $standard-padding 0;
+
+  .promo-content {
+    text-align: center;
+
+    .promo-text {
+      display: inline-block;
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 8px 0;
+    }
+
+    .promo-cta {
+      @include ghost-button();
+      display: inline-block;
+      margin: 0 1.3em 1em 1.3em;
+    }
+
+
+  }
+}
+
+.about-section {
+  $video-aspect-ratio: 16/9;
+  margin-bottom: 70px;
+  margin-top: 50px;
+
+  .overview {
+    margin: 0 0 $standard-padding 0;
+  }
+
+  .video {
+    //@extend .full-bleed;
+    height: 50vw;
+  }
+
+  @include large-up {
+    display: flex;
+    margin-bottom: 100px;
+    padding-bottom: 0;
+
+    .video {
+      $width: 50%;
+      align-self: stretch;
+      flex-shrink: 0;
+      height: 310px;
+      margin: 0 0 0 $standard-padding;
+      width: $width;
+    }
+  }
+}
+
+.accreditations-section {
+  margin-left: -($standard-padding + 10px);
+  margin-right: -($standard-padding + 10px);
+  @extend .standard-padding;
+  background-color: #f4f8fb;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .accreditations-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 654px;
+  }
+
+  .accreditation {
+    margin: 24px 10px;
+
+    img {
+      max-width: 102px;
+      width: 100%;
+    }
+  }
+
+  @include large-up {
+    padding: 40px 0;
+  }
+}
+
+.exploration-section {
+  @extend .full-bleed;
+  margin-top: $standard-padding;
+
+  a {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,.3);
+    cursor: pointer;
+    display: block;
+    margin: $standard-padding;
+    padding: 1px $standard-padding;
+    text-align: center;
+    text-decoration: none;
+    transform: perspective(100px);
+    transition: .5s;
+
+    &.program {
+      background-color: $light-green;
+    }
+
+    &.about {
+      background-color: $light-blue;
+    }
+
+    &.enrollment {
+      background-color: $light-orange;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    img {
+      display: none;
+      max-width: 100%;
+    }
+
+    p {
+      display: none;
+      color: black;
+      padding: 7px 27px 13px;
+    }
+
+    &:hover {
+      box-shadow: 0 11px 25px -2px rgba(0, 0, 0, 0.2);
+      transform: perspective(100px) translate3d(0, -7px, 2px);
+    }
+  }
+
+  @include large-up {
+    display: flex;
+    padding: 0 ($standard-padding/2);
+    margin-top: 100px;
+    margin-bottom: 110px;
+
+    a {
+      margin: 0 ($standard-padding/2);
+      overflow: hidden;
+      padding: 0;
+      width: (100% / 3);
+
+      img {
+        display: inline;
+      }
+
+      p {
+        display: block;
+      }
+    }
+  }
+}

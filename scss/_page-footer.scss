@@ -1,0 +1,50 @@
+.page-footer {
+  @extend .full-bleed;
+  align-items: center;
+  background-color: $light-blue;
+  color: white;
+  display: flex;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-logo {
+    margin: $standard-padding 0 $standard-padding $standard-padding;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .nav {
+
+
+  }
+
+  .contact-info {
+    padding: 30px $standard-padding;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .address {
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.copyright-bar {
+  @extend .full-bleed;
+  background-color: $blue;
+  color: rgba(white, .7);
+  padding: 20px $standard-padding;
+}
+
+

@@ -1,0 +1,127 @@
+.page-header {
+  background: white;
+
+  .loading-bar {
+    @extend .full-bleed;
+    height: 5px;
+    background: red;
+  }
+
+  .top-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .logo-container {
+
+    }
+
+    .ccns-logo {
+      max-height: 70px;
+      max-width: 100%;
+      min-width: 111px;
+      padding: 9px 0;
+    }
+
+    .nav {
+      // position: absolute;
+      // right: 0;
+      // background: white;
+      // top: 0;
+
+      align-self: stretch;
+      display: flex;
+      justify-content: space-between;
+      min-width: 500px;
+      margin-left: 20px;
+      width: 100%;
+      max-width: 600px;
+
+      .nav-item {
+        cursor: pointer;
+        font-family: Chalkduster;
+        font-size: 12px;
+        height: 100%;
+        position: relative;
+        transition: .25s;
+
+        &.about {
+          color: $light-blue;
+        }
+        &.program {
+          color: $light-green;
+        }
+        &.teachers {
+          color: $teal;
+        }
+        &.enrollment {
+          color: $light-orange;
+        }
+        &.community {
+          color: $light-yellow;
+        }
+        &.donate {
+          color: $blue;
+        }
+        &.contact {
+          color: $red;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: inherit;
+          transition: .25s;
+        }
+
+        .title {
+          align-items: center;
+          display: flex;
+          height: 100%;
+        }
+
+        $menu-side-padding: 19px;
+
+        .sub-menu {
+          background-color: inherit;
+          border-radius: 0 0 3px 3px;
+          display: none;
+          flex-direction: column;
+          margin-left: (-$menu-side-padding);
+          opacity: 0;
+          padding: 16px 0;
+          position: absolute;
+
+          .sub-menu-item {
+            background-color: inherit;
+            white-space: nowrap;
+            transition: .1s;
+
+            a {
+              display: block;
+              padding: 9px ($menu-side-padding * 2);
+            }
+          }
+        }
+
+        &:hover {
+          background: #f9f9f9; //TODO variablize this
+
+          .title {
+            padding: 0 19px;
+          }
+
+          .sub-menu {
+            display: flex;
+            opacity: 1;
+
+            .sub-menu-item:hover {
+              background-color: white;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

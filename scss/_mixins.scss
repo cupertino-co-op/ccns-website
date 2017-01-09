@@ -1,0 +1,18 @@
+@mixin ghost-button($button-color:white, $background-color:$light-blue) {
+  $button-color: white !default;
+  color: $button-color;
+  border: 1px solid $button-color;
+  border-radius: .25em;
+  padding: .625em 1.438em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba($button-color, .2);
+  }
+}
+
+@mixin large-up($breakpoint:768px) {
+  @media (min-width: $breakpoint) {
+    @content
+  }
+}

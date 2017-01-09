@@ -1,0 +1,18 @@
+--- !cupertinocoop.org/^navItems
+navItems:
+  about:
+    name: About
+    link: /about.html
+  programs:
+    name: Programs
+  teachers:
+    name: Teachers
+    link: /teachers.html
+  enrollment:
+    name: Enrollment
+  community:
+    name: Community
+  donate:
+    name: Donate
+  contact:
+    name: Contact Us

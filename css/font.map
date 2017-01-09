@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/font.css",
+	"sources": [
+		"../scss/font.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\n    font-family: Chalkduster;\n    src: url(fonts/chalkduster.ttf);\n}\n"
+	],
+	"mappings": "AAAA,UAAU;EACN,WAAW,EAAE,WAAY;EACzB,GAAG,EAA2B,0BAAC",
+	"names": []
+}

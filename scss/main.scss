@@ -1,0 +1,85 @@
+$medium-grey: #dedede;
+$light-blue: #44bbdf;
+$light-green: #82b440;
+$teal: #089271;
+$light-yellow: #ffbd00;
+$light-orange: #f0a655;
+$blue: #007dbe;
+$red: #bd1c09;
+
+$standard-padding: 47px;
+
+@import 'mixins';
+@import 'page-header';
+@import 'page-footer';
+@import 'homepage';
+
+
+$body-background-color: $medium-grey;
+$page-background-color: white;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $body-background-color;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: #ff375a;
+  font-family: Chalkduster;
+  font-size: 23px;
+  line-height: 29px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+
+  @include large-up {
+    margin-top: 90px;
+  }
+}
+
+h2 {
+  color: #ff375a;
+  font-family: Chalkduster;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.no-br {
+  white-space: nowrap;
+}
+
+.standard-padding {
+  padding-left: $standard-padding;
+  padding-right: $standard-padding;
+}
+
+.full-bleed {
+  margin-left: (-$standard-padding);
+  margin-right: (-$standard-padding);
+}
+
+.page-wrapper {
+  background-color: $page-background-color;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .standard-padding;
+  overflow: hidden;
+}
+
+
+
+
